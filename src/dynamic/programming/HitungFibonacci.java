@@ -32,6 +32,10 @@ public class HitungFibonacci {
         return hasil[n-1];
     }
     
+    private static void tampilHasil(int n, BigInteger hasil) {
+        System.out.println("Bilangan Fibonacci ke-"+n+" : " + hasil);
+    }
+    
     public static void main(String[] args) {
         String identitas = "Rizky Fajar Ramadhan / XRPL4 / 32";
         
@@ -40,6 +44,8 @@ public class HitungFibonacci {
         int n = tampilInput();
         
         BigInteger hasil = fibo(n);
+        
+        tampilHasil(n, hasil);
         
     }
     
